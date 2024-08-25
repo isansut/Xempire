@@ -64,10 +64,6 @@ headers = {
     'user-agent': 'Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36'
 }
 
-# Inisialisasi bot Telegram
-bot = telebot.TeleBot('7408982748:AAEafamevEJXpm1dWr0QNmA_d8G3xTxpDX8')  # Ganti dengan token bot Anda
-CHAT_ID = '6550828209' # Ganti dengan ID chat Anda
-
 def claim_bonus_thread():
     while True:
         claim_bonus()
@@ -80,8 +76,8 @@ def claim_bonus_thread():
         print("\n")
 
 # Inisialisasi bot Telegram dan mulai polling di thread terpisah
-bot = telebot.TeleBot('7408982748:AAEafamevEJXpm1dWr0QNmA_d8G3xTxpDX8')
-CHAT_ID = '6550828209'
+bot = telebot.TeleBot('7408982748:AAEafamevEJXpm1dWr0QNmA_d8G3ggt34') # GANTI TOKEN BOT LO
+CHAT_ID = '65508223435' # GANTI CHAT ID LO
 
 # Mulai thread untuk claim_bonus
 claim_thread = threading.Thread(target=claim_bonus_thread)
